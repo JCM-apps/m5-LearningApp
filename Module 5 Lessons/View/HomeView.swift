@@ -1,25 +1,24 @@
-//
+
 //  ContentView.swift
-//  Module 5 Lessons
+//  LearningApp
 //
-//  Created by Juan Meneses on 2/17/23.
+//  Created by Christopher Ching on 2021-03-03.
 //
 
 import SwiftUI
 
 struct HomeView: View {
+    
+    @EnvironmentObject var model: ContentModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        
+        Text("Hello, world!")
+            .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
     }

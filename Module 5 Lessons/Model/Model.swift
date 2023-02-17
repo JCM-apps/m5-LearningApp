@@ -1,43 +1,33 @@
-
-
 //
-//  Module.swift
-//  modelue 5 Learning App
+//  Models.swift
+//  LearningApp
 //
-//  Created by Juan Meneses on 2/17/23.
+//  Created by Christopher Ching on 2021-03-04.
 //
 
 import Foundation
 
-class Module: Identifiable, Decodable {
-    
+struct Module: Decodable, Identifiable {
     
     var id: Int
-    var category:String
+    var category: String
     var content: Content
     var test: Test
+}
+
+struct Content: Decodable, Identifiable {
     
-    
+    var id: Int
+    var image: String
+    var time: String
+    var description: String
+    var lessons: [Lesson]
     
 }
 
-
-class Content: Identifiable, Decodable {
+struct Lesson: Decodable, Identifiable {
     
-    var id:Int
-    var image:String
-    var time:String
-    var description:String
-    var lessons: [Lessons]
-    
-    
-    
-}
-
-
-class Lessons: Identifiable, Decodable {
-    
-    var int: Int
+    var id: Int
     var title: String
     var video: String
     var duration: String
@@ -45,22 +35,19 @@ class Lessons: Identifiable, Decodable {
     
 }
 
-
 struct Test: Decodable, Identifiable {
     
     var id: Int
     var image: String
     var time: String
     var description: String
-    var questions: [Questions]
-    
+    var questions: [Question]
 }
 
-
-class Questions: Identifiable, Decodable {
+struct Question: Decodable, Identifiable {
     
     var id: Int
     var content: String
     var correctIndex: Int
-    var answers:[String]
+    var answers: [String]
 }
