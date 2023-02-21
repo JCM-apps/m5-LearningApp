@@ -16,6 +16,9 @@
 		7C7E557029A03DDF00807945 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E556F29A03DDF00807945 /* data.json */; };
 		7C7E557229A03DF000807945 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E557129A03DF000807945 /* style.html */; };
 		7CCF99E629A44B9500C79BF7 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF99E529A44B9500C79BF7 /* HomeViewRow.swift */; };
+		7CCF99E829A4541500C79BF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF99E729A4541500C79BF7 /* ContentView.swift */; };
+		7CCF99EA29A45CF100C79BF7 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF99E929A45CF100C79BF7 /* ContentViewRow.swift */; };
+		7CCF99EC29A47D7700C79BF7 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF99EB29A47D7700C79BF7 /* ContentDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		7C7E556F29A03DDF00807945 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		7C7E557129A03DF000807945 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		7CCF99E529A44B9500C79BF7 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		7CCF99E729A4541500C79BF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7CCF99E929A45CF100C79BF7 /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
+		7CCF99EB29A47D7700C79BF7 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,9 @@
 			children = (
 				7C7E551429A02A3800807945 /* HomeView.swift */,
 				7CCF99E529A44B9500C79BF7 /* HomeViewRow.swift */,
+				7CCF99E729A4541500C79BF7 /* ContentView.swift */,
+				7CCF99E929A45CF100C79BF7 /* ContentViewRow.swift */,
+				7CCF99EB29A47D7700C79BF7 /* ContentDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,7 +205,10 @@
 			files = (
 				7C7E552629A02B9900807945 /* Model.swift in Sources */,
 				7CCF99E629A44B9500C79BF7 /* HomeViewRow.swift in Sources */,
+				7CCF99E829A4541500C79BF7 /* ContentView.swift in Sources */,
+				7CCF99EC29A47D7700C79BF7 /* ContentDetailView.swift in Sources */,
 				7C7E552829A02BBE00807945 /* ContentModel.swift in Sources */,
+				7CCF99EA29A45CF100C79BF7 /* ContentViewRow.swift in Sources */,
 				7C7E551529A02A3800807945 /* HomeView.swift in Sources */,
 				7C7E551329A02A3800807945 /* LessonsApp.swift in Sources */,
 			);
