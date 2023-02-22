@@ -30,11 +30,17 @@ struct HomeView: View {
                             
                             //Learning Card
                             NavigationLink(destination: ContentView()
-                                .onAppear(perform: {model.beginModule(module.id)})) {
+                                .onAppear(perform: {model.beginModule(module.id)
+                                    print(model.currentContentSelected)
+                                    
+                                }),
+                                           tag: module.id,
+                                           selection: $model.currentContentSelected,
+                             label: {
                                 
                                 HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count:" \(String(module.content.lessons.count)) Lessons", time: module.content.time)
                                 
-                            }
+                            })
                                
                                 
                                 
