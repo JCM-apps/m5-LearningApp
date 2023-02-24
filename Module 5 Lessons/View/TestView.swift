@@ -10,10 +10,10 @@ struct TestView: View {
     @State var numCorrect = 0
     
     @State var submitted = false
-    
+    @State var showResults = false
     var body: some View {
         
-        if model.currentQuestion != nil {
+        if model.currentQuestion != nil && showResults == false {
             
             VStack (alignment: .leading) {
                 // Question number
@@ -83,10 +83,18 @@ struct TestView: View {
                 Button {
                      
                     if submitted == true {
-                        model.nextQuestion()
-                        submitted = false
-                        selectedAnswerIndex = nil
                         
+                        if model.currentQuestionIndex + 1 == model.currentModule!.test.questions.count {
+                            
+                            showResults = true
+                        }
+                        
+                        
+                        else{
+                            model.nextQuestion()
+                            submitted = false
+                            selectedAnswerIndex = nil
+                        }
                         
                     }
                     
@@ -121,9 +129,14 @@ struct TestView: View {
             
         }
         
-        else {
-            ProgressView()
+        else if showResults == true{
+            TestResultsView(numCorrect: numCorrect)
             
+        }
+        
+        else {
+            
+            ProgressView()
         }
         
     }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C0CB5FC29A931F40003161C /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0CB5FB29A931F40003161C /* TestView.swift */; };
+		7C0CB5FE29A9727F0003161C /* TestResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0CB5FD29A9727F0003161C /* TestResultsView.swift */; };
 		7C7E551329A02A3800807945 /* LessonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7E551229A02A3800807945 /* LessonsApp.swift */; };
 		7C7E551529A02A3800807945 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7E551429A02A3800807945 /* HomeView.swift */; };
 		7C7E551729A02A3A00807945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E551629A02A3A00807945 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		7C0CB5FB29A931F40003161C /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		7C0CB5FD29A9727F0003161C /* TestResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultsView.swift; sourceTree = "<group>"; };
 		7C7E550F29A02A3800807945 /* Module 5 Lessons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Module 5 Lessons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C7E551229A02A3800807945 /* LessonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsApp.swift; sourceTree = "<group>"; };
 		7C7E551429A02A3800807945 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				7CCF99E929A45CF100C79BF7 /* ContentViewRow.swift */,
 				7CCF99EB29A47D7700C79BF7 /* ContentDetailView.swift */,
 				7C0CB5FB29A931F40003161C /* TestView.swift */,
+				7C0CB5FD29A9727F0003161C /* TestResultsView.swift */,
 				7CF3461329A5253300823887 /* CodeTextView.swift */,
 				7CD91BDF29A6DF8C00AB4161 /* RectangleCard.swift */,
 			);
@@ -237,6 +240,7 @@
 				7CF3461429A5253300823887 /* CodeTextView.swift in Sources */,
 				7C7E551529A02A3800807945 /* HomeView.swift in Sources */,
 				7C7E551329A02A3800807945 /* LessonsApp.swift in Sources */,
+				7C0CB5FE29A9727F0003161C /* TestResultsView.swift in Sources */,
 				7CD91BE029A6DF8C00AB4161 /* RectangleCard.swift in Sources */,
 				7CCF99F129A4815100C79BF7 /* Constants.swift in Sources */,
 			);
